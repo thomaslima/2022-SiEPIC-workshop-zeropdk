@@ -5,9 +5,10 @@ https://stackoverflow.com/questions/41485217/mount-current-directory-as-a-volume
 Upload docker to cloud
 https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html
 
-docker tag zeropdk:v2 felimath/zeropdk:v2
-docker tag zeropdk:v2 felimath/zeropdk:latest
+docker tag zeropdk:v3 felimath/zeropdk:v3
+docker tag zeropdk:v3 felimath/zeropdk:latest
 docker push felimath/zeropdk
+docker push felimath/zeropdk:v3
 
 Presenting with github pages
 https://medium.com/learning-machine-learning/present-your-data-science-projects-with-jupyter-slides-75f20735eb0f

@@ -1,10 +1,10 @@
-FROM python:3.7
+FROM python:3.10
 
 # Upgrade pip
 RUN pip install --upgrade pip
 
 # Install readline
-RUN pip install readline
+# RUN pip install readline
 
 # Install various python packages
 RUN pip install jupyter -U && pip install jupyterlab
@@ -12,7 +12,7 @@ RUN pip install matplotlib numpy scipy
 
 # Install interest package
 RUN pip install klayout
-RUN pip install zeropdk==19.10b1
+RUN pip install zeropdk==20.12
 
 # Configure jupyter environment
 RUN jupyter notebook --generate-config
